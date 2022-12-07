@@ -1,0 +1,18 @@
+// *{
+//     outline: red solid;
+// }
+.main{
+    margin-left:22%;
+    padding: 0px 0px;
+    overflow: hidden;
+    width: 78%;
+    // max-width: 800px;
+    background: rgba(214, 212, 212, 0.486);
+}
+
+@media (max-width: 950px){
+  .main{
+    width: 100%;
+    margin-left:0%;
+  }
+}

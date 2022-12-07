@@ -1,0 +1,138 @@
+* {
+  // outline: red solid;
+}
+.sidebar-section {
+  width: 20%;
+  height: 100%;
+  padding: 15px;
+  background: rgba(2, 20, 49, 0.877);
+  position: fixed;
+  color: white;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    // display: none;
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(2, 20, 49, 0.877);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(2, 2, 2, 0.349);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    // background: #555;
+    width: 15px;
+  }
+  ul {
+    margin-top: 0;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.side-min-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 5px 20px 5px;
+  .side-nav-icon {
+    i {
+      font-size: 24px;
+      padding: 5px;
+    }
+  }
+}
+
+.side-profile {
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .sidebar-profile-text {
+    padding: 0;
+    h5 {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      font-size: 15px;
+    }
+    p {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 12px;
+    }
+  }
+}
+
+.tab-box-text {
+  padding-left: 20px;
+  margin-bottom: 0;
+  h4 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #818cf8;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 12px;
+  }
+}
+
+
+.tab-btn {
+  list-style: none;
+  padding: 0px;
+
+  a {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 10px;
+    align-items: center;
+    padding-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    i {
+      max-width: 15px;
+      height: 15px;
+      font-size: 15px;
+      margin-left: 1px;
+    }
+    h5 {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    &:hover {
+      background-color: rgba(247, 242, 242, 0.199);
+      border-radius: 5px;
+    }
+  }
+}
+
+.footer-img {
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.2;
+  width: 150px;
+  img {
+    width: 100%;
+  }
+}
+hr {
+  border: 0.5px solid rgba(255, 255, 255, 0.171);
+}
+
+@media (max-width: 950px) {
+  .sidebar-section {
+    // width: 0%;
+    display: none;
+    // // overflow: hidden;
+  }
+}
