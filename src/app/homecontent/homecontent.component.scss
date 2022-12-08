@@ -3,7 +3,7 @@
 // }
 
 .homeProject-section{
-  overflow: hidden;
+  // overflow: hidden;
 }
 .project-cards {
   margin: 20px auto;
@@ -67,7 +67,7 @@
 
     a {
       padding: 10px 15px;
-      margin: 5px auto;
+      margin: 5px;
       border-radius: 100px;
       text-decoration: none;
       color: black;
@@ -166,8 +166,10 @@
 }
 
 .tasks {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 .task-dis {
@@ -186,7 +188,7 @@
 
     a {
       padding: 10px 15px;
-      margin: 5px auto;
+      margin: 5px;
       border-radius: 100px;
       text-decoration: none;
       color: black;
@@ -226,13 +228,56 @@
 
   }
 }
+
+.schedule{
+  padding: 24px;
+}
+
+.scheduel-sub-contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  // padding: 15px 0px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.164);
+}
+
+.scheduel-sub-contents-text{
+  // display: flex;
+  // justify-content: space-between;
+  // padding-right: 250px;
+}
+
+.scheduel-sub-contents-icons{
+  color:rgba(51, 51, 51, 0.699) ;
+  padding: 5px 0px 15px 0px;
+  span{
+    font-size: 12px;
+    padding: 0px 10px 0px 5px;
+  }
+}
+
+
 #chart {
   max-width: 580px;
   margin: 35px auto;
   padding: 0;
+  min-width: 450px!important;
 }
 
 
+@media(max-width:767px){
+  #chart {
+    max-width: 300px;
+    margin: 35px auto;
+    padding: 0;
+    min-width: 250px!important;
+  }
+
+  .scheduel-sub-contents{
+    max-width: 100%;
+  }
+}
 
 
 
