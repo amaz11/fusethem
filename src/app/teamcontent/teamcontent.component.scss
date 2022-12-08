@@ -1,0 +1,64 @@
+// *{
+//     outline: solid red;
+// }
+
+.team-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin: 30px 10px;
+}
+.team-card{
+    background: white;
+    width: 100%;
+    // height: 250x;
+    max-width: 250px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+    margin: auto 10px;
+
+}
+
+.team-card-img-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+    img{
+        width: 130px;
+        border-radius: 50%;
+    }
+}
+
+.team-card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  background-color: rgba(119, 119, 119, 0.075);
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.team-bottom-btn {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(51, 51, 51, 0.164);
+    // border-right: 1px solid rgba(51, 51, 51, 0.164);
+    
+    i{
+        font-size: 15px;
+        padding-right: 5px;
+    color: rgba(119, 119, 119, 0.986);
+
+    }
+}
+
+.btn2{
+    border-right: 1px solid rgba(51, 51, 51, 0.164);
+    }

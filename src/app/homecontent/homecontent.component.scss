@@ -2,9 +2,9 @@
 //     outline: solid red;
 // }
 
-.homeProject-section{
-  // overflow: hidden;
-}
+// .homeProject-section {
+//   // overflow: hidden;
+// }
 .project-cards {
   margin: 20px auto;
   display: grid;
@@ -89,6 +89,7 @@
     align-items: center;
     // flex-wrap: wrap;
     gap: 15px;
+    max-width: 100%;
   }
   .github-overview-body-card {
     height: 400px;
@@ -175,7 +176,7 @@
 .task-dis {
   max-width: 100%;
   background-color: white;
-
+  position: relative;
   border-radius: 10px;
 
   .task-dis1 {
@@ -204,36 +205,49 @@
     }
   }
 }
+
 .tasks-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   background-color: rgba(119, 119, 119, 0.075);
+  border-radius: 0px 0px 10px 10px;
   .tasks-bottom-btn {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 24px;
     margin-right: auto;
     margin-left: auto;
     border-top: 1px solid rgba(51, 51, 51, 0.164);
     border-bottom: 1px solid rgba(51, 51, 51, 0.164);
+    .tasks-num{
+      font-size: 36px;
+      font-weight: 800;
+      line-height: -1.8px;
+    }
+    .tasks-text{
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
-  .btn1{
+  .btn1 {
     border-right: 1px solid rgba(51, 51, 51, 0.164);
-    border-radius: 0px 0px 0px 10px; 
+    border-radius: 0px 0px 0px 10px;
   }
-  .btn2{
-    border-radius: 0px 0px 10px 0px; 
-
+  .btn2 {
+    border-radius: 0px 0px 10px 0px;
   }
 }
 
-.schedule{
+.schedule {
   padding: 24px;
 }
 
-.scheduel-sub-contents{
+.scheduel-sub-contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,44 +256,48 @@
   border-bottom: 1px solid rgba(51, 51, 51, 0.164);
 }
 
-.scheduel-sub-contents-text{
-  // display: flex;
-  // justify-content: space-between;
-  // padding-right: 250px;
-}
+// .scheduel-sub-contents-text{
+//   // display: flex;
+//   // justify-content: space-between;
+//   // padding-right: 250px;
+// }
 
-.scheduel-sub-contents-icons{
-  color:rgba(51, 51, 51, 0.699) ;
+.scheduel-sub {
+  border-bottom: 0px solid rgba(51, 51, 51, 0.164);
+}
+.scheduel-sub-contents-icons {
+  color: rgba(51, 51, 51, 0.699);
   padding: 5px 0px 15px 0px;
-  span{
+  span {
     font-size: 12px;
     padding: 0px 10px 0px 5px;
   }
 }
 
-
-#chart {
+.chart {
   max-width: 580px;
   margin: 35px auto;
   padding: 0;
-  min-width: 450px!important;
+  min-width: 450px !important;
 }
 
-
-@media(max-width:767px){
-  #chart {
-    max-width: 300px;
-    margin: 35px auto;
-    padding: 0;
-    min-width: 250px!important;
+@media (max-width: 1180px) {
+  .github-overview-body{
+    flex-direction: column;
+    // align-items:flex-start;
   }
-
-  .scheduel-sub-contents{
+  .tasks-bottom {
+    margin-top: 100px;
+  }
+  .tasks {
+    grid-template-columns: 1fr;
     max-width: 100%;
   }
+
+  .task-dis1{
+    margin-bottom: 100px;
+  }
 }
-
-
 
 @media (max-width: 750px) {
   .project-cards {
@@ -291,8 +309,19 @@
   .github-overview-body {
     flex-direction: column;
   }
+  #chart {
+    max-width: 300px;
+    margin: 35px auto;
+    padding: 0;
+    min-width: 250px !important;
+  }
+
+  .scheduel-sub-contents {
+    max-width: 100%;
+  }
   .tasks {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
   // .task-dis{
   //   max-width: 700px;
@@ -319,8 +348,8 @@
   }
 
   .tasks {
-    flex-direction: column;
-    max-width: 500px;
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 
@@ -342,7 +371,8 @@
     max-width: 100%;
   }
 
-  // .github-overview-body-card{
-  //   max-width: 100%;
-  // }
+  .tasks {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
 }

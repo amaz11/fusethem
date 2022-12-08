@@ -11,6 +11,8 @@ import { ProjectComponent } from './project/project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomecontentComponent } from './homecontent/homecontent.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { TeamcontentComponent } from './teamcontent/teamcontent.component';
+import { BudgetcontentComponent } from './budgetcontent/budgetcontent.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     MainbodyComponent,
     NavComponent,
     ProjectComponent,
-    HomecontentComponent
+    HomecontentComponent,
+    TeamcontentComponent,
+    BudgetcontentComponent
   ],
   imports: [
     BrowserModule,
