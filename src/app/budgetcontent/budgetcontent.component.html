@@ -1,1 +1,39 @@
-<p>budgetcontent works!</p>
+<section class="budget-section">
+    <div class="budget-distribution-section">
+        <div class="budget-distribution">
+            <p>Budget Distribution</p>
+            <div class="chart">
+                <apx-chart
+                  [series]="series"
+                  [chart]="chart"
+                  [xaxis]="xaxis"
+                  [title]="title"
+                ></apx-chart>
+              </div>
+        </div>
+        <div class="budget-expenses-group">
+            <div class="budget-expenses">
+               <div class="budget-expenses-nav">
+                <span>Budget Expenses</span>
+                <i class="fa-solid fa-ellipsis-vertical"></i> 
+               </div>
+                <div>
+                    <div id="chart">
+                      </div>
+                </div>
+            </div>
+            <div class="budget-expenses">
+                <div class="budget-expenses-nav">
+                    <span>Budget Expenses</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                   </div>
+            </div>
+            <div class="budget-expenses">
+                <div class="budget-expenses-nav">
+                    <span>Budget Expenses</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                   </div>
+            </div>
+        </div>
+    </div>
+</section>
